@@ -1,3 +1,4 @@
+#!/usr/bin/env python3.6
 from user import User
 from credential import Credential
 
@@ -82,11 +83,11 @@ def main():
 
         elif short_code == 'dc':
 
-            if display_credential():
+            if display_credentials():
                 print("Here is a list of all your credentials")
                 print('\n')
 
-                for credential in display_credential():
+                for credential in display_credentials():
                     print(
                         f"{credential.name} {credential.user_name} {credential.email} {credential.password}")
 
